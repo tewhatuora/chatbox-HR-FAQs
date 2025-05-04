@@ -11,19 +11,9 @@ interface AssistantOption {
 
 const assistantOptions: AssistantOption[] = [
   {
-    id: "asst_nXkuFUI47tFH0EsheqGDgLCQ",
-    name: "Media Logs",
-    description: "Drafting a first response to the media questions from the media logs"
-  },
-  {
-    id: "asst_QIkAnnTvWihDgbD4o6UrluWm",
-    name: "Meeting Minutes Taking",
-    description: "Summarise meeting minutes from a file or text input"
-  },
-  {
-    id: "asst_yH75KL07chJztcQJ2FvAnD4A",
-    name: "DEMO",
-    description: "Discover What AI Can Do for You"
+    id: "asst_9lFqQtbTRGPHLyau1MRJg48v",
+    name: "HR FAQs",
+    description: "Response to Q&A for reconsultation"
   }
 ];
 
