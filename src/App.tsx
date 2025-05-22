@@ -210,7 +210,7 @@ function App() {
                 placeholder="Enter your text here..."
                 className="w-full h-96 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1B4D5C] focus:border-transparent resize-none bg-gray-50"
               />
-              /*<div className="absolute bottom-4 left-4">
+              <div className="absolute bottom-4 left-4">
                 <input 
                   type="file"
                   accept=".txt,.doc,.docx"
@@ -225,7 +225,7 @@ function App() {
                   <Paperclip className="w-5 h-5 mr-2" />
                   <span>{file ? file.name : "Attach a file"}</span>
                 </label>
-              </div>*/
+              </div>
             </div>
             <div className="flex space-x-4">
               <button
