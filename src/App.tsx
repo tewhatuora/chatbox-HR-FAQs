@@ -274,9 +274,10 @@ function App() {
 
         <div className="bg-[#3C8795] text-white rounded-xl shadow-lg p-6">
           <p className="text-sm leading-relaxed">
-            Try out our AI Assistant, powered by Azure OpenAI, to explore how generative AI can support your work. Test ideas, ask questions, and discover potential use cases in a safe sandbox environment. If you find it useful, we can explore how to tailor it for your team's needs.
-            <br/><br/>
-            To share ideas or feedback, contact us at <a href="mailto:innovation@tewhatuora.govt.nz" className="underline">innovation@tewhatuora.govt.nz.</a>
+            <strong>Disclaimer:</strong><br/>
+            This AI-assisted chatbot is here to help answer common questions related to the Digital Services restructure, including HR matters, new processes, and team functions. 
+            It draws from published information on the Health NZ intranet. However, as this is a <strong>beta tool</strong>, responses may not always be complete or fully accurate. 
+            If you're uncertain about any answer or need further clarification, please reach out to <a href="mailto:enablingconsultation@tewhatuora.govt.nz" className="underline">innovation@tewhatuora.govt.nz.</a>
           </p>
         </div>
       </div>
