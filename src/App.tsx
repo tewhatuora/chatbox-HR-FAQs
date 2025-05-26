@@ -13,7 +13,7 @@ const assistantOptions: AssistantOption[] = [
   {
     id: "asst_9lFqQtbTRGPHLyau1MRJg48v",
     name: "HR FAQs",
-    description: "Response to Q&A for reconsultation"
+    description: "Digital Services Change Process Q&A"
   }
 ];
 
