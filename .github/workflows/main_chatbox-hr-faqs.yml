@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '22.x'
+          node-version: '22-lts'
 
       - name: npm install, build, and test
         run: |
@@ -61,4 +61,4 @@ jobs:
           app-name: 'ChatBox-HR-FAQs'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2861866D90524D8A874601B534021B0A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12F6884E84E94EA69FB2F2BC98B2DBD8 }}
