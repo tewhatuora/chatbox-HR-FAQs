@@ -13,7 +13,7 @@ const assistantOptions: AssistantOption[] = [
   {
     id: "asst_9lFqQtbTRGPHLyau1MRJg48v",
     name: "HR FAQs",
-    description: "Response to Q&A for reconsultation"
+    description: "Digital Services Change Process Q&A"
   }
 ];
 
@@ -26,9 +26,9 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: import.meta.env.VITE_OPENAI_ENDPOINT,
-    apiVersion: import.meta.env.VITE_OPENAI_API_VERSION,
-    apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+    endpoint: process.env.AZURE_OPENAI_ENDPOINT",
+    apiVersion: process.env.AZURE_OPENAI_API_VERSION,
+    apiKey: process.env.AZURE_OPENAI_API_KEY,
     dangerouslyAllowBrowser: true
   });
 
