@@ -26,9 +26,9 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: process.env.AZURE_OPENAI_ENDPOINT",
-    apiVersion: process.env.AZURE_OPENAI_API_VERSION,
-    apiKey: process.env.AZURE_OPENAI_API_KEY,
+    endpoint: import.meta.env.VITE_OPENAI_ENDPOINT,
+    apiVersion: import.meta.env.VITE_OPENAI_API_VERSION,
+    apiKey: import.meta.env.VITE_OPENAI_API_KEY,
     dangerouslyAllowBrowser: true
   });
 
