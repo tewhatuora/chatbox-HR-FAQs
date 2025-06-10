@@ -4,7 +4,7 @@ import { AzureOpenAI } from 'openai';
 import mammoth from 'mammoth';
 
 import os
-openai_api_key = os.getenv("AZURE_OPENAI_API_KEY")
+openai.pi_key = os.getenv("AZURE_OPENAI_API_KEY")
 openai.api_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 openai.api_version = os.getenv("AZURE_OPENAI_API_VERSION")
 
