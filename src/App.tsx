@@ -31,7 +31,7 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: import.openai.api_endpoint,
+    endpoint: openai.api_endpoint,
     apiVersion: openai.api_version,
     apiKey: openai_api_key
     dangerouslyAllowBrowser: true
