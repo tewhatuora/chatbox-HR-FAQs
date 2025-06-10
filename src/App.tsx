@@ -2,12 +2,8 @@ import React, { useState, useRef } from 'react';
 import { Paperclip, Send, RefreshCw } from 'lucide-react';
 import { AzureOpenAI } from 'openai';
 import mammoth from 'mammoth';
-
 import os
-openai.pi_key = os.getenv("AZURE_OPENAI_API_KEY")
-openai.api_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
-openai.api_version = os.getenv("AZURE_OPENAI_API_VERSION")
-
+  
 interface AssistantOption {
   id: string;
   name: string;
@@ -31,9 +27,9 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: openai.api_endpoint,
-    apiVersion: openai.api_version,
-    apiKey: openai_api_key
+    endpoint: os.getenv("AZURE_OPENAI_ENDPOINT")
+    apiVersion: os.getenv("AZURE_OPENAI_API_VERSION")
+    apiKey: os.getenv("AZURE_OPENAI_API_KEY")
     dangerouslyAllowBrowser: true
   });
 
