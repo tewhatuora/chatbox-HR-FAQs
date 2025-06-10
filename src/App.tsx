@@ -26,9 +26,9 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: os.getenv("AZURE_OPENAI_ENDPOINT")
-    apiVersion: os.getenv("AZURE_OPENAI_API_VERSION")
-    apiKey: os.getenv("AZURE_OPENAI_API_KEY")
+    endpoint: "https://dev-tuhi-clinicalnotesynthesis.openai.azure.com",
+    apiVersion: "2024-05-01-preview",
+    apiKey: "149096a4341942e186e76793d516c568",
     dangerouslyAllowBrowser: true
   });
 
