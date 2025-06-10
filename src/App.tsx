@@ -3,6 +3,11 @@ import { Paperclip, Send, RefreshCw } from 'lucide-react';
 import { AzureOpenAI } from 'openai';
 import mammoth from 'mammoth';
 
+import os
+openai_api_key = os.getenv("AZURE_OPENAI_API_KEY")
+openai.api_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+openai.api_version = os.getenv("AZURE_OPENAI_API_VERSION")
+
 interface AssistantOption {
   id: string;
   name: string;
@@ -26,9 +31,9 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   
   const client = new AzureOpenAI({
-    endpoint: import.meta.env.VITE_OPENAI_ENDPOINT,
-    apiVersion: import.meta.env.VITE_OPENAI_API_VERSION,
-    apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+    endpoint: import.openai.api_endpoint,
+    apiVersion: openai.api_version,
+    apiKey: openai_api_key
     dangerouslyAllowBrowser: true
   });
 
