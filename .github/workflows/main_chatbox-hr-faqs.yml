@@ -61,4 +61,4 @@ jobs:
           app-name: 'ChatBox-HR-FAQs'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_78A7E0812024477384EFC862C88DD645 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F57A5B6137CD42519D341E87A594AE60 }}
