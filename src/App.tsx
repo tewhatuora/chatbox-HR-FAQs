@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Paperclip, Send, RefreshCw } from 'lucide-react';
 import { AzureOpenAI } from 'openai';
 import mammoth from 'mammoth';
-
+  
 interface AssistantOption {
   id: string;
   name: string;
