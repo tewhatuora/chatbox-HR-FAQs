@@ -13,7 +13,7 @@ const assistantOptions: AssistantOption[] = [
   {
     id: "asst_9lFqQtbTRGPHLyau1MRJg48v",
     name: "HR FAQs",
-    description: "Digital Services Change Process Q&A"
+    description: "Introducing Morph, your Digital Services Change Process Chatbot"
   }
 ];
 
